@@ -1,0 +1,15 @@
+{# templates/invoice/create.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Create Invoice</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.invoiceDate) }}
+        {{ form_row(form.invoiceNumber) }}
+        {{ form_row(form.customerId) }}
+
+        <button type="submit">Create Invoice</button>
+    {{ form_end(form) }}
+{% endblock %}

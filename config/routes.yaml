@@ -1,0 +1,14 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+# config/routes.yaml
+
+app_invoice_create:
+    path: /invoice/create
+    controller: App\Controller\InvoiceController::createInvoice
+    
+
+app_invoice_line_add:
+    path: /invoice_line/add
+    controller: App\Controller\InvoiceLineController::addInvoiceLine
+    

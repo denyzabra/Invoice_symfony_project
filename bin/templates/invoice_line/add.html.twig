@@ -1,0 +1,17 @@
+{# templates/invoice_line/add.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Add Invoice Line</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.description) }}
+        {{ form_row(form.quantity) }}
+        {{ form_row(form.amount) }}
+        {{ form_row(form.vatAmount) }}
+        {{ form_row(form.totalWithVAT) }}
+
+        <button type="submit">Add Invoice Line</button>
+    {{ form_end(form) }}
+{% endblock %}
